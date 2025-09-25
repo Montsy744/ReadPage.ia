@@ -1,4 +1,5 @@
 import React from "react";
+import { ArrowUp } from "lucide-react";
 
 const Chat = ({decodedLink} : {decodedLink : string}) => {
 
@@ -19,14 +20,14 @@ const Chat = ({decodedLink} : {decodedLink : string}) => {
                 <div className="w-full">
                     <textarea className="w-full outline-0 resize-none h-full bg-transparent mb-4"></textarea>
 
-                    <div>
+                    <div className="flex justify-between items-center">
                         <div className="badge badge-soft badge-success badge-lg">
                             ReadPage.ia
                         </div>
                         <button
                         className="btn btn-primary btn-circle"
                         >
-
+                            <ArrowUp />
                         </button>
                     </div>
                 </div>
