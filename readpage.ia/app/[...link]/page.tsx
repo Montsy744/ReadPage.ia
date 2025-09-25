@@ -12,7 +12,7 @@ function reconstructUrl({url} : {url : string[]}) {
   return decodedComponents.join('/');
 }
 
-const Page = ({ params }: PageProps) => {
+const Page = ({ params }: pageProps) => {
   
   if (!params.link || params.link.length === 0) {
     return <div>Erreur : Aucun lien fourni</div>;
